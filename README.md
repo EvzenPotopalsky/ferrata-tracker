@@ -1,15 +1,15 @@
 # Ferrata Tracker
 
-A React and TypeScript app for exploring via ferratas and keeping a personal climbing journal. Built to practise routing, forms, Firebase authentication, and working with asynchronous data.
+A React and TypeScript app for exploring via ferratas and keeping a personal climbing journal. Built to practise routing, forms, Firebase authentication and working with asynchronous data.
 
 ## Features
 
-- Browse routes, filter by difficulty, and sort by name or grade.
+- Browse routes, filter by difficulty and sort by name or grade.
 - View route details and source links.
 - Create an account and log in with email and password.
 - Save, edit, or remove a completion with a date and optional note.
 - View completed routes with country and difficulty totals.
-- Responsive layout, labelled controls, keyboard focus styles, and loading/error states.
+- Responsive layout, labelled controls, keyboard focus styles and loading/error states.
 
 ## Tech stack
 
@@ -77,7 +77,7 @@ Open the URL printed by Vite, normally http://localhost:5173. Restart the server
 
 ## Limitations
 
-- Repeated ascents, password reset, email verification, and account deletion are not implemented.
+- Repeated ascents, password reset, email verification and account deletion are not implemented.
 - If a route leaves the catalogue, its journal entry remains visible but cannot currently be edited or removed through the UI.
 - Automated tests cover validation and summary logic; live Firebase behaviour and security rules need separate verification.
 

@@ -63,14 +63,20 @@ test("validates Firestore records and uses the document ID", () => {
     parseCompletion("bad", { completedAt: "2020-02-30", note: "" }),
   );
   assert.equal(
-    parseCompletion("route", { completedAt: "2020-01-01", note: "x".repeat(2000) }).note.length,
+    parseCompletion("route", {
+      completedAt: "2020-01-01",
+      note: "x".repeat(2000),
+    }).note.length,
     2000,
   );
   assert.throws(() =>
-    parseCompletion("bad", { completedAt: "2020-01-01", note: "x".repeat(2001) }),
+    parseCompletion("bad", {
+      completedAt: "2020-01-01",
+      note: "x".repeat(2001),
+    }),
   );
 });
-test("keeps unavailable completions, sorts newest first, and counts known countries and grades", () => {
+test("keeps unavailable completions, sorts newest first and counts known countries and grades", () => {
   const ferratas = [
     parseFerrata("a", routeData),
     parseFerrata("b", {

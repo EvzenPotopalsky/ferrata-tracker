@@ -30,7 +30,7 @@ export default function AuthPage() {
       setError(
         isSignup
           ? "We couldn't create your account. Check your details and connection, then try again."
-          : "We couldn't log you in. Check your email, password, and connection, then try again.",
+          : "We couldn't log you in. Check your email, password and connection, then try again.",
       );
     } finally {
       setIsSubmitting(false);

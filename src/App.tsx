@@ -64,7 +64,7 @@ export default function App() {
         <p className="eyebrow">Your trail journal</p>
         <h1 id="explore-title">One climb at a time.</h1>
         <p>
-          Discover via ferratas and keep a record of the routes, places, and
+          Discover via ferratas and keep a record of the routes, places and
           moments along the way.
         </p>
         <svg
